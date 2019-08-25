@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%= require('../common/meta/meta.ejs')() %>
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="./static/css/swiper.min.css"/>
+		<script src="./static/js/swiper.min.js"></script>
+	</head>
+
+	<body>
+		<%= require('../common/nav-ordinary/nav-ordinary.ejs') ({StateCode : 0})%>
+		<div class="fif-main">
+			<div class="swiper-container">
+				<div class="my-wrapper">
+					<div class="swiper-slide"><img src="./static/img/index/poster.png"></div>
+					<div class="swiper-slide"><img src="./static/img/index/poster.png"></div>
+					<div class="swiper-slide"><img src="./static/img/index/poster.png"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="title">FUT COINS</div>
+			<div class="game-bok">
+				<a href="#" class="game background-c border-c game-fb">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="54933"><path d="M595.968 229.376c8.192 8.192 12.288 19.968 14.336 31.744 2.56 15.36 2.048 30.72 2.048 46.08 0 84.992-0.512 169.984 0 254.976 23.04 11.776 47.616 20.992 73.216 20.48 16.896 0.512 33.792-4.096 48.64-12.8 15.36-9.216 28.16-23.552 37.376-40.448 10.24-18.944 16.384-39.936 19.968-61.952 4.096-25.088 4.096-50.176 3.584-75.776-1.536-38.4-6.656-77.824-22.016-113.152-8.192-19.456-19.456-37.376-33.28-52.224-12.8-14.336-27.648-26.624-43.008-36.864-34.816-23.04-72.704-38.4-110.592-51.712-24.576-8.704-48.64-16.896-73.216-25.088-43.008-13.824-86.016-26.624-130.048-35.84v811.52c54.784 19.456 109.568 38.912 163.84 58.368V264.192c0.512-12.8 2.048-26.624 9.728-36.864 4.608-6.656 11.776-9.728 19.456-8.192 7.168 1.536 14.336 4.608 19.968 10.24z m-417.28 506.368c57.344-22.016 114.688-44.544 172.032-66.56 0.512-4.096 0-8.192 0.512-12.8v-92.672c-72.704 27.648-144.896 55.808-217.6 83.456-17.92 7.168-35.84 13.312-52.736 20.992-19.968 9.216-39.936 19.456-57.856 32.768-7.68 5.632-14.848 13.312-18.944 22.528-4.096 9.728-4.608 20.48-1.024 30.208 4.096 11.264 11.776 20.992 20.48 28.16 15.872 13.312 35.328 20.992 54.272 27.136 58.368 20.992 120.32 31.232 181.76 29.696 30.72-0.512 60.928-4.608 91.136-10.24 0.512-5.12 0-10.24 0.512-15.872v-78.336c-24.576 9.728-49.152 18.944-73.216 28.672-9.216 3.584-18.944 7.68-28.672 9.728-14.336 3.584-29.696 4.608-44.544 5.12-13.312-0.512-27.136-1.536-39.424-7.168-4.608-2.048-9.216-5.12-11.264-10.24-3.072-3.584-0.512-8.192 2.048-11.264 6.144-6.656 14.336-10.24 22.528-13.312z m828.928-58.368c-14.848-14.336-33.28-23.04-51.2-30.72-10.24-3.584-20.48-8.192-30.72-11.264-52.736-17.92-108.032-25.6-163.328-25.6-16.896 0.512-33.28 1.024-50.176 3.072-46.592 5.632-92.672 15.872-136.704 32.768v110.592c60.928-23.04 121.856-46.592 182.784-70.144 20.48-7.68 41.984-10.24 62.976-10.24 13.824 0.512 27.648 1.536 40.448 7.168 4.608 2.048 9.216 5.12 11.264 10.24 2.048 6.144-2.048 11.264-6.144 14.848-9.728 8.704-22.528 11.776-33.792 16.896-85.504 33.28-171.52 66.56-257.024 99.84-2.048 0.512-1.024 2.56-1.536 4.096v102.912l337.92-132.096c18.432-7.68 37.376-13.824 54.784-23.552 16.384-9.216 32.768-19.456 45.568-34.816 6.656-8.192 11.264-18.432 10.752-29.696 0.512-13.824-7.168-25.6-15.872-34.304z" p-id="54934"></path></svg></em>
+					<div class="title">PS4</div>
+					<div class="subtitle">FIFA 19 Coins</div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+				<a href="#" class="game background-c border-c game-fb">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="56813"><path d="M739.8 636.4c88.6 108.6 129.4 197.6 108.8 237.4-15.8 30.2-113.4 89.2-185.2 111.8-59.2 18.6-136.8 26.6-200.8 20.4-76.4-7.4-153.8-34.8-220.2-78C186.6 891.6 174 876.6 174 846.8c0-59.8 65.8-164.6 178.4-284.2 64-67.8 153-147.4 162.8-145.2 18.8 4.2 168.6 150.2 224.6 219zM377.2 287.6c-59.4-53.8-116.2-107.8-172.8-126.8-30.4-10.2-32.6-9.6-57.4 16.2-58.4 60.8-107 159.4-120.6 244.8-10.8 68.4-12.2 87.6-8.4 121 11.2 101 34.6 170.8 81 241.8 19 29.2 24.2 34.6 18.6 19.8-8.4-22-0.6-75 19-128 28.6-78 107.8-225.8 240.6-388.8z m623.2 127C966.6 254.6 865.4 154 851.2 154c-14.6 0-48.4 13-72 27.8-46.6 29-82 62.8-128.6 105.6C735.4 394 855 566.2 896.4 692c13.6 41.4 19.4 82.2 14.8 104.6-3.4 17-3.4 17 2.8 9.2 12.2-15.4 39.8-62.6 50.8-87 14.8-32.4 30-80.4 37.2-117.4 8.6-45 7.8-141.6-1.6-186.8zM282.6 86C378 81 502 155 511.2 156.8c1.4 0.2 20.8-8.4 43.2-19.4 127.8-62.2 188-51.6 214.8-50.4-127.8-78.6-305.4-100-467.8-23.4-46.8 22.2-48 23.8-18.8 22.4z" p-id="56814"></path></svg></em>
+					<div class="title">XBOX ONE</div>
+					<div class="subtitle">FIFA 19 Coins</div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+				<a href="#" class="game background-c border-c game-fb">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="58319"><path d="M894.903 111.851H126.584c-35.36 0-64.026 28.637-64.026 64.026v512.18c0 35.362 28.667 64.028 64.026 64.028h320.132v96.041H286.65c-17.664 0-32.015 14.35-32.015 32.014v32.009h512.214v-32.01c0-17.663-14.35-32.013-32.014-32.013H574.768v-96.041h320.134c35.358 0 64.027-28.666 64.027-64.027V175.877c0-35.39-28.668-64.026-64.027-64.026zM478.73 688.06c0-17.663 14.35-32.011 32.013-32.011 17.663 0 32.012 14.349 32.012 32.01 0 17.698-14.35 32.048-32.012 32.048-17.664-0.002-32.013-14.351-32.013-32.047z m-352.148-64.027V175.877h768.319v448.156H126.582z" p-id="58320"></path></svg></em>
+					<div class="title">PC</div>
+					<div class="subtitle">FIFA 19 Coins</div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+				<a href="#" class="game background-c border-c game-fb">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="61988"><path d="M283.3 114.6c-79.7 14.2-143.8 73.2-164 150.8-7.3 28-7.8 44.4-7 261.6 0.5 199.5 0.7 204.1 4 219.5 18.4 83 77.4 142.1 161.2 161.7 10.9 2.5 24.9 3 114.5 3.5 92.8 0.7 102.4 0.5 104.9-2s2.7-34.5 2.7-397c0-268.7-0.5-395.3-1.7-397.6-1.7-3-4.5-3.1-101.6-3-78.9 0.1-102.6 0.6-113 2.5z m149.9 397.6v335.7l-67.4-0.8c-62.1-0.7-68.8-1-81.2-4.1-53.3-13.8-92.9-54.8-104-108.4-3.6-16.7-3.6-428.9-0.2-445.3 9.9-46.6 42.2-85.2 85.8-102.6 21.9-8.8 32-9.8 102.9-9.9l64.1-0.2v335.6zM297.5 277.8c-10.4 2-26.3 9.9-34.8 17.4-17.4 15.1-26 36.4-24.7 61.6 0.7 13.1 1.5 16.6 6.8 27.2 7.8 16.1 19.5 27.8 35.6 35.8 11.1 5.5 13.9 6.1 28.3 6.6 13.1 0.5 17.7 0 26.5-3 36-12.1 57.7-47.1 51.5-82.8-7-42.6-47.4-71.1-89.2-62.8zM580.2 113.1c-0.7 0.5-1.2 180.1-1.2 399.1 0 361.3 0.2 397.9 2.7 398.9 4.5 1.7 133 1 148.9-0.7 67.3-7.6 126.6-48.5 158.9-109.3 4.1-7.8 9.6-20.9 12.4-29C912.3 741 912 749.3 912 511.2c0-190-0.3-218.4-2.7-230.5-16.4-86.3-82.2-151.4-168.7-166.3-11.6-2-29.5-2.5-87.1-2.5-39.7 0-72.8 0.5-73.3 1.2z m176.9 360.8c25.8 6.8 47.1 26.5 55.7 51.7 5.5 15.6 5.3 38.4-0.2 52.7-10.1 26.2-30 44.6-55.5 51.4-41.4 10.8-85.5-14.2-97.6-55.3-3.6-12.6-3.5-33.8 0.7-46.7 12.4-40.7 55.5-64.6 96.9-53.8z" p-id="61989"></path></svg></em>
+					<div class="title">SWITCH</div>
+					<div class="subtitle">FIFA 19 Coins</div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+				<a href="#" class="game background-c border-c game-fb phton-all">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="60982"><path d="M776.676 1010.08h-479.92c-28.332 0-51.33-22.999-51.33-51.33V67.63c0-28.332 22.999-51.33 51.33-51.33h479.92c28.332 0 51.33 22.999 51.33 51.33v891.12c0 28.332-22.999 51.33-51.33 51.33z m-240.1-51.329c19.073 0 34.221-15.426 34.221-34.221s-15.426-34.221-34.221-34.221-34.221 15.426-34.221 34.221 15.426 34.221 34.221 34.221z m240.1-839.791h-479.92v719.742h479.641V118.96h0.279z" p-id="60983"></path></svg></em>
+					<div class="title">MOBILE</div>
+					<div class="subtitle">FIFA Mobile Coins </div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+				<a href="#" class="game background-c border-c game-fb phton-ios">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1164"><path d="M851.2 371.2c-38.4-51.2-96-89.6-166.4-89.6-64-6.4-134.4 38.4-166.4 38.4s-89.6-38.4-147.2-38.4c-76.8 0-147.2 44.8-185.6 115.2-76.8 134.4-19.2 339.2 57.6 448 38.4 57.6 83.2 115.2 140.8 115.2s76.8-38.4 147.2-38.4 83.2 38.4 147.2 38.4 102.4-57.6 134.4-108.8c25.6-38.4 51.2-76.8 64-121.6-121.6-38.4-192-281.6-25.6-358.4zM512 288C512 166.4 608 64 736 64c0 121.6-102.4 224-224 224z" p-id="1165"></path></svg></em>
+					<div class="title">IOS</div>
+					<div class="subtitle">FIFA Mobile Coins </div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+				<a href="#" class="game background-c border-c game-fb phton-android">
+					<em class="game-icon font-c"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2245"><path d="M294.848 728.768c0 30.272 23.936 54.976 53.312 54.976h38.528a52.928 52.928 0 0 0-1.984 14.4v109.824c0 28.736 22.592 52.032 50.56 52.032 27.904 0 50.56-23.296 50.56-52.032V798.08a53.952 53.952 0 0 0-2.048-14.4h93.888a53.312 53.312 0 0 0-2.048 14.4v109.824c0 28.736 22.656 52.032 50.56 52.032 27.904 0 50.56-23.296 50.56-52.032V798.08a51.84 51.84 0 0 0-2.048-14.4h38.528c29.44 0 53.312-24.704 53.312-54.976V347.264H294.784v381.504zM210.56 347.264a51.264 51.264 0 0 0-50.56 51.968v222.528c0 28.8 22.592 52.032 50.56 52.032 27.904 0 50.56-23.296 50.56-52.032V399.232a51.328 51.328 0 0 0-50.56-52.032z m640.256 0a51.264 51.264 0 0 0-50.56 51.968v222.528c0 28.8 22.656 52.032 50.56 52.032 27.904 0 50.56-23.296 50.56-52.032V399.232a51.264 51.264 0 0 0-50.56-52.032z m-204.16-208.256l39.936-61.504a8.832 8.832 0 0 0-2.368-12.032 8.32 8.32 0 0 0-11.712 2.432l-22.528 34.752-9.472 14.592-9.6 14.848a270.464 270.464 0 0 0-100.224-18.944c-35.84 0-69.76 6.848-100.224 18.944l-19.072-29.44-22.528-34.752a8.32 8.32 0 0 0-11.712-2.432 8.832 8.832 0 0 0-2.304 12.032l39.808 61.504c-71.488 34.304-119.872 99.2-119.872 173.568h471.744c0-74.304-48.32-139.264-119.808-173.504zM429.696 243.2a25.6 25.6 0 0 1-25.28-25.984 25.6 25.6 0 0 1 25.28-25.984 25.6 25.6 0 0 1 25.216 25.984 25.6 25.6 0 0 1-25.216 25.984z m202.24 0a25.6 25.6 0 0 1-25.344-25.984 25.6 25.6 0 0 1 25.28-25.984 25.6 25.6 0 0 1 25.28 25.984 25.6 25.6 0 0 1-25.28 25.984z" p-id="2246"></path></svg></em>
+					<div class="title">Android</div>
+					<div class="subtitle">FIFA Mobile Coins </div>
+					<div class="info">Cheap Fut Coins</div>
+					<div class="buy-but font-c">BUY NOW</div>
+				</a>
+			</div>
+			<div class="info-bok">
+				<div class="info">
+					<div class="title-bok">
+						<span class="title select-b-bb2">NEWS</span>
+						<a class="more hover-f" href="#">More</a>
+					</div>
+					<ul class="list-bok">
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36FIFA 19TEAM OF WEEK 36FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+						<li><a href="#" class="hover-f">FIFA 19TEAM OF WEEK 36</a><span>03/02/2019</span></li>
+					</ul>
+				</div>
+				<div class="info">
+					<div class="title-bok">
+						<span class="title select-b-bb2">ABOUT US</span>
+					</div>
+					<div id="js-essay-bok" class="essay-bok scroll-style">
+						<p>FIFA Coins and FUT Coins Safely for Sale at Best FIFA Coins Supplier  Specializing in providing cheap FIFA Coins and safe FUT Coins including the UK FIFA Coins and FIFA Ultimate Team Coins United Kingdom to the gamer for over 6 years, FIFACOIN.com is one of the top FIFA Coins sellers and FIFA Coin websites UK in the world and is highly appreciated by customers because of featuring the following highlights</p><p>FIFA Coins Characterized by Various Consoles Support and Cheap Price and Safe Transfer and Fast DeliveryFIFA Coins of Various ConsolesAvailableA variety of FUT Coins including United Kingdom FUT Coins of different consoles are optional at FIFACOIN.com. FIFA Coins PS4, FIFA Coins Xbox One, FIFA Coins PC, FIFA Coins Switch, FIFA Mobile Coins etc. are all available. No matter what consoles you play for FIFA game, you can buy FUT Coins cheaper and buy FIFA Coins cheap UK from FIFACOIN.com.</p><p>FIFA Coins at Lower Price</p><p>Cheap FIFA Coins and FUT Coins UK cheapest are for sale at FIFACOIN.com to help customers to save more money on buying FIFA Ultimate Team Coins and Futcoins United Kingdom so as have better experience on playing FIFA game. When you buy FIFA Coins PS4 100k from FIFACOIN.com, it just costs $9.89, that is, 8.21GBP for 100K FIFA Coins PS4 UK. And if you achieve higher customer level, you can enjoy up to 10% off on buying FIFA Coins. However, you need spend $12.46 for 100K FIFA Coins PS4, meaning 9.82 pounds for 100K Ultimate Team Coins PS4 UK if you buy from other suppliers.  </p><p>FIFA Ultimate Team Coins Transferred Safely</p><p>FIFACOIN.com transfers FUT Coins and Ultimate Team Coins UK to your game accounts in safe transfer system: FIFA Player Auction 3.0, FIFA Comfort Trade 3.0 and FIFA Player Auction P2P, which feature 99% safe guarantee. Thus, you can get safe FIFA Coins with lowest risks of getting banned and buy FIFA Coins United Kingdom safe without any worries at the reliable FIFA Coins supplier FIFACOIN.com.
+					</p>
+					</div>
+					<div class="more-but font-c" id="js-more-but">More<svg class="icon" viewBox="0 0 1843 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2858"><path d="M1387.32440947 237.12330028a53.6332414 53.6332414 0 0 0-75.80164813 1e-8l-393.31043876 393.31043875-393.31043876-393.31043877A53.6332414 53.6332414 0 0 0 451.96067514 312.92494839l429.06593339 429.0659334a53.6332414 53.6332414 0 0 0 75.80164812 0l429.06593336-429.0659334A53.6332414 53.6332414 0 0 0 1387.32440947 237.12330028z" p-id="2859"></path></svg></div>
+				</div>
+			</div>
+		</div>
+		<%= require('../common/footer-ordinary/footer-ordinary.ejs') ()%>
+	</body>
+
+</html>

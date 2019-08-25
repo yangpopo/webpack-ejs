@@ -1,0 +1,372 @@
+// 手机
+@media (max-width: 768px) {
+    .fif-main {
+        position: fixed;
+        top: 13vw;
+        bottom: 16vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        left: 0px;
+        right: 0px;
+        .swiper-container {
+            width: 100vw;
+            height: 50vw;
+            box-sizing: border-box;
+            .my-wrapper {
+                display: flex;
+                .swiper-slide {
+                    width: 100vw;
+                    height: 50vw;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: 0px;
+                        left: 50%;
+                        height: 100%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            .swiper-pagination{
+                background-color: rgba(0, 0, 0, 0.2);
+                width: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 3px 5px;
+                border-radius: 20px;
+                .swiper-pagination-bullet{
+                    background-color: #ffffff;
+                    opacity: 0.8;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: #f9823a;
+                }
+            }
+        }
+        >.title{
+            text-align: center;
+            margin: 5vw 0px 5vw;
+            font-size: 4.5vw;
+            font-weight: bold;
+        }
+        .game-bok{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 5vw;
+            a.game{
+                width: 29.4vw;
+                margin: 0px 0px 3vw 3vw;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 2vw 0vw;
+                &.phton-all{
+                    display: none;
+                }
+                em.game-icon{
+                    width: 10vw;
+                    height: 10vw;
+                    background-color: #fff;
+                    border-radius: 5vw;
+                    position: relative;
+                    margin-bottom: 2vw;
+                    svg.icon{
+                        width: 7vw;
+                        height: 7vw;
+                        vertical-align: middle;
+                        fill: currentColor;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .title{
+                    color: #fff;
+                    font-size: 3.5vw;
+                    font-weight: bold;
+                }
+                .subtitle, .info, .buy-but{
+                    display: none;
+                }
+            }
+        }
+        .info-bok{
+            width: 95vw;
+            margin: 0px auto 5vw auto;
+            .info{
+                width: 100%;
+                .title-bok{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    height: 10vw;
+                    line-height: 10vw;
+                    border-bottom: 1px solid #dde0e5;
+                    margin-bottom: 3vw;
+                    .title{
+                        height: calc(10vw - 1px);
+                        line-height: calc(10vw - 1px);
+                        font-size: 4vw;
+                        font-weight: bold;
+                    }
+                    .more{
+                        color: #949494;
+                        font-size: 3.5vw;
+                    }
+                }
+                ul.list-bok{
+                    width: 100%;
+                    li{
+                        height: 8vw;
+                        line-height: 8vw;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        font-size: 3.5vw;
+                        color: #949494;
+                        a{
+                            color: #949494;
+                            display: block;
+                            width: 75%;
+                            word-break:keep-all;/* 不换行 */ 
+                            white-space:nowrap;/* 不换行 */ 
+                            overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */ 
+                            text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/ 
+                        }
+                    }
+                }
+                .essay-bok{
+                    height: 50vw;
+                    overflow: hidden;
+                    color: #949494;
+                    font-size: 3.5vw;
+                    line-height: 6vw;
+                    box-sizing: border-box;
+                    margin-bottom: 5vw;
+                    
+                }
+                .more-but{
+                    display: block;
+                    background-color: #f4f7fa;
+                    width: 100%;
+                    height: 10vw;
+                    line-height: 10vw;
+                    text-align: center;
+                    font-size: 3.5vw;
+                    svg.icon{
+                        width: 6.5vw;
+                        height: 6.5vw;
+                        fill: currentColor;
+                        overflow: hidden;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+// pc
+@media (min-width:768px) {
+    .fif-main {
+        .swiper-container {
+            width: 100%;
+            min-width: 1200px;
+            height: 400px;
+            box-sizing: border-box;
+            .my-wrapper {
+                display: flex;
+                .swiper-slide {
+                    height: 400px;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: 0px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            background-color: rgba(0, 0, 0, 0.2);
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 3px 5px;
+            border-radius: 20px;
+            .swiper-pagination-bullet{
+                background-color: #ffffff;
+                opacity: 0.8;
+            }
+            .swiper-pagination-bullet-active{
+                background-color: #f9823a;
+            }
+        }
+        >.title{
+            width: 1200px;
+            margin: 35px auto 25px auto;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .game-bok{
+            width: 1200px;
+            margin: 35px auto 35px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            a.game{
+                width: 220px;
+                height: 290px;
+                text-align: center;
+                box-sizing: border-box;
+                padding-top: 30px;
+                color: #FFFFFF;
+                display: block;
+                &.phton-android, &.phton-ios{
+                    display: none;
+                }
+                em.game-icon{
+                    background-color: #fff;
+                    width: 74px;
+                    height: 74px;
+                    display: inline-block;
+                    position: relative;
+                    border-radius: 50%;
+                    margin-bottom: 15px;
+                    svg.icon{
+                        width: 55px;
+                        height: 55px;
+                        vertical-align: middle;
+                        fill: currentColor;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                >.title{
+                    font-size: 16px;
+                    font-weight: bold;
+                    height: 32px;
+                    line-height: 32px;
+                    border-bottom: 1px solid #ffffff;
+                    width: 65%;
+                    margin: 0px auto;
+                    margin-bottom: 10px;
+                }
+                .subtitle{
+                    font-size: 14px;
+                    height: 23px;
+                    line-height: 23px;
+                    margin-bottom: 10px;
+                }
+                .info{
+                    font-size: 14px;
+                    height: 23px;
+                    line-height: 23px;
+                    margin-bottom: 10px;
+                }
+                .buy-but{
+                    width: 110px;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: 14px;
+                    margin: 0px auto;
+                    border-radius: 5px;
+                    background-color: #fff;
+                }
+            }
+        }
+        .info-bok{
+            width: 1200px;
+            margin: 35px auto 35px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            .info{
+                width: 565px;
+                .title-bok{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    height: 45px;
+                    line-height: 45px;
+                    border-bottom: 1px solid #dde0e5;
+                    margin-bottom: 15px;
+                    .title{
+                        height: 44px;
+                        line-height: 44px;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .more{
+                        color: #949494;
+                        font-size: 14px;
+                    }
+                }
+                ul.list-bok{
+                    width: 100%;
+                    li{
+                        height: 32px;
+                        line-height: 32px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        color: #949494;
+                        a{
+                            color: #949494;
+                            display: block;
+                            width: 80%;
+                            word-break:keep-all;/* 不换行 */ 
+                            white-space:nowrap;/* 不换行 */ 
+                            overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */ 
+                            text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/ 
+                        }
+                    }
+                }
+                .essay-bok{
+                    height: 224px;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                    color: #949494;
+                    font-size: 14px;
+                    line-height: 20px;
+                    box-sizing: border-box;
+                    padding-right: 10px;
+                    >p{
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+                .more-but{
+                    display: none;
+                }
+            }
+        }
+    }
+}

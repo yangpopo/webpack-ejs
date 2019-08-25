@@ -1,0 +1,67 @@
+// 手机
+@media (max-width: 768px) {
+	
+}
+// pc
+@media (min-width:768px) {
+	.fif-main{
+		.pager-bok{
+		    display: flex;
+		    flex-direction: row;
+		    flex-wrap: nowrap;
+		    align-items: center;
+		    justify-content: flex-start;
+		    a{
+                font-size: 14px;
+                min-width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                display: block;
+                box-sizing: border-box;
+                border: 1px solid #d4d4d4;
+                color: #3d4048;
+            }
+		    >dt{
+		        min-width: 30px;
+		        height: 30px;
+		        position: relative;
+		        &:first-of-type{
+		            margin: 0px 5px 0px 0px;
+		        }
+		        &:last-of-type{
+                    margin: 0px 0px 0px 5px;
+                }
+		        a{
+		            color: #b1b1b1;
+		            &:hover{
+                        color: #3d4048;
+                    }
+                    svg.icon-arrow{
+                        width: 12px;
+                        height: 12px;
+                        vertical-align: middle;
+                        fill: currentColor;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+		        }
+		    }
+		    >dd{
+		        margin: 0px 5px;
+		        &.omit{
+		            color: #d4d4d4;
+		            svg.icon-omit{
+		                width: 1em;
+		                height: 1em;
+		                vertical-align: middle;
+		                fill: currentColor;
+		                overflow: hidden;
+		            }
+		        }
+		    }
+		}
+	}
+}

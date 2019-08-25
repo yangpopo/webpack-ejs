@@ -1,0 +1,260 @@
+// 手机
+@media (max-width: 768px) {
+    .fif-main {
+        position: fixed;
+        top: 13vw;
+        bottom: 16vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        left: 0px;
+        right: 0px;
+        .crumbs-bok{
+            display: none;
+        }
+        .game-bok{
+            display: none;
+        }
+        .info-bok{
+            width: 95vw;
+            margin: 2.5vw auto 2.5vw auto;
+            font-size: 3.5vw;
+            color: #929292;
+            line-height: 4.5vw;
+            a{
+                color: #3d4048;
+                font-weight: bold;
+            }
+        }
+        .scaler-bok{
+            width:95vw;
+            height: 20vw;
+            margin: 0px auto 5vw;
+            .game-type{
+                display: none;
+            }
+            .title{
+                font-size: 4vw;
+                height: 8vw;
+                line-height: 8vw;
+                font-weight: bold;
+                color: #3e4149;
+            }
+            .input-text{
+                outline: none;
+                width: 42.5%;
+                box-sizing: border-box;
+                height: 8vw;
+                border: 1px solid #b8c2cf;
+                padding: 0px 2vw;
+                color: #949494;
+                vertical-align: top;
+            }
+            >span{
+                &.switch-pc{
+                    display: none;
+                }
+                &.switch-phone{
+                    font-size: 3.5vw;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 15%;
+                    height: 8vw;
+                    line-height: 8vw;
+                    text-align: center;
+                    vertical-align: top;
+                    svg.icon-triangle{
+                        width: 3.5vw;
+                        height: 3.5vw;
+                        vertical-align: -0.5vw;
+                        fill: currentColor;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .scaler-but{
+                display: block;
+                height: 10vw;
+                line-height: 10vw;
+                font-size: 4vw;
+                padding: 0px 5vw;
+                text-align: center;
+                margin-top: 3vw;
+            }
+        }
+        .product-bok{
+            display: none;
+        }
+    }
+}
+// pc
+@media (min-width:768px) {
+    .fif-main {
+        min-height: 600px;
+        .game-bok{
+            width: 1200px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 15px;
+            a.game{
+                display: block;
+                border: 1px solid #f0f0f0;
+                height: 35px;
+                line-height: 35px;
+                padding: 0px 15px;
+                margin-right: 10px;
+                font-size: 14px;
+                color: #3d4048;
+                svg.icon{
+                    width: 21px;
+                    height: 21px;
+                    vertical-align: -5px;
+                    fill: currentColor;
+                    overflow: hidden;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .info-bok{
+            width: 1200px;
+            margin: 0px auto 15px auto;
+            font-size: 14px;
+            color: #929292;
+            line-height: 20px;
+            a{
+                color: #3d4048;
+                font-weight: bold;
+            }
+        }
+        .scaler-bok{
+            width: 1200px;
+            height: 60px;
+            margin: 0px auto 20px auto;
+            background-color: #edf2f6;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            h6.title{
+                display: none;
+            }
+            .game-type{
+                height: 60px;
+                line-height: 60px;
+                padding: 0px 20px;
+                font-size: 16px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                margin-right: 15px;
+                svg.icon{
+                    width: 25px;
+                    height: 25px;
+                    vertical-align: middle;
+                    fill: currentColor;
+                    overflow: hidden;
+                    margin-right: 10px;
+                }
+            }
+            .input-text{
+                outline: none;
+                width: 140px;
+                height: 30px;
+                margin: 0px 5px;
+                border: 1px solid #b8c2cf;
+                padding: 0px 5px;
+                color: #949494;
+            }
+            >span{
+                &.switch-pc{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                &.switch-phone{
+                    display: none;
+                }
+            }
+            .scaler-but{
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0px 20px;
+                margin-left: 20px;
+            }
+        }
+        .product-bok{
+            width: 1200px;
+            margin: 0px auto 20px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .product{
+                width: 180px;
+                border: 1px solid #edf2f6;
+                background-color: #fff;
+                margin: 0px 8px 16px;
+                transition: box-shadow 0.5s;
+                .img{
+                    width: 100%;
+                    height: 160px;
+                    position: relative;
+                    background-color: #edf2f6;
+                    margin-bottom: 10px;
+                    img{
+                        width: 65%;
+                        height: auto;
+                        max-height: 85%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .name,.value{
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #3d4048;
+                    height: 23px;
+                    line-height: 23px;
+                    padding: 0px 12px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    overflow:hidden; //超出的文本隐藏
+                    text-overflow:ellipsis; //溢出用省略号显示
+                    white-space:nowrap; //溢出不换行
+                }
+                .price{
+                    font-size: 14px;
+                    font-weight: bold;
+                    height: 23px;
+                    line-height: 23px;
+                    padding: 0px 12px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    overflow:hidden; //超出的文本隐藏
+                    text-overflow:ellipsis; //溢出用省略号显示
+                    white-space:nowrap; //溢出不换行
+                    margin-bottom: 5px;
+                }
+                .buy-but{
+                    width: 90%;
+                    margin: 0px auto 12px auto;
+                    display: block;
+                    text-align: center;
+                    font-size: 14px;
+                    height: 32px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}

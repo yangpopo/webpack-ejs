@@ -1,0 +1,50 @@
+// 手机
+@media (max-width: 768px) {
+    .fif-main {
+        position: fixed;
+        top: 13vw;
+        bottom: 16vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        left: 0px;
+        right: 0px;
+        .crumbs-bok{
+            display: none;
+        }
+        .news-details-bok{
+            width: 95vw;
+            margin: 0px auto;
+            >h6.title, >.time,>hr.line{
+                display: none;
+            }
+        }
+    }
+}
+// pc
+@media (min-width:768px) {
+    .fif-main {
+        min-height: 600px;
+        .news-details-bok{
+            width: 780px;
+            margin: 0px auto 25px auto;
+            >h6.title{
+                font-size: 16px;
+                color: #3d4048;
+                font-weight: bold;
+                margin: 20px 0px 15px 0px;
+            }
+            >.time{
+                font-size: 12px;
+                color: #b5b5b6;
+            }
+            >hr.line{
+                margin: 25px 0px;
+                border: none;
+                border-top: 1px solid #ededed;
+            }
+            >.rich-text{
+                width: 100%;
+            }
+        }
+    }
+}
