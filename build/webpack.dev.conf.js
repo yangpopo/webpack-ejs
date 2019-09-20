@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const os = require('os');
 
 const config = require('../config')
 var fs = require("fs");
@@ -37,9 +38,26 @@ plugins.push(new CopyWebpackPlugin([{
 	ignore: ['.*']
 }]));
 
+console.log("Project is running at http://localhost:" + config.dev.port)
+console.log("Project is running at http://" + getIPAdress() + ':' +config.dev.port)
+
+function getIPAdress() {
+    var interfaces = os.networkInterfaces();
+    for (var devName in interfaces) {
+        var iface = interfaces[devName];
+        for (var i = 0; i < iface.length; i++) {
+            var alias = iface[i];
+            if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
+                return alias.address;
+            }
+        }
+    }
+}
+
 module.exports = {
 	mode: 'development',
 	entry: entry,
+	stats:"minimal",
 	output: {
 		publicPath: '/',
 		filename: 'js/[name].js',
@@ -48,15 +66,15 @@ module.exports = {
 	devtool: 'cheap-module-eval-source-map',
 	devServer: {
 //		publicPath: config.dev.assetsPublicPath,
-//		host: config.dev.host,
-//		port: config.dev.port,
+		host: process.env.HOST|| '0.0.0.0',
+		port: config.dev.port,
 		clientLogLevel: 'error',
 		contentBase: path.join(__dirname, "../dist"),
 		inline: true,
 		hot: true,
 		compress: true,
 		lazy: false,
-		open: true,
+// 		open: true,
 		overlay: {
 			warnings: true,
 			errors: true
